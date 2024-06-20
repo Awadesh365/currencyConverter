@@ -22,6 +22,10 @@ function App() {
     setAmount(convertedAmount);
   };
 
+  const convert = () => {
+    setConvertedAmount(amount * currencyInfo[to]);
+  };
+
   return (
     <div
       className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat"
