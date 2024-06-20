@@ -14,6 +14,14 @@ function App() {
   const currencyInfo = useCurrencyInfo(from);
   const options = Object.keys(currencyInfo);
 
+  const swap = () => {
+    setFrom(to);
+    setTo(from);
+
+    setConvertedAmount(amount);
+    setAmount(convertedAmount);
+  };
+
   return (
     <div
       className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat"
